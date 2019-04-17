@@ -29,9 +29,9 @@
 <property name="hbm2ddl.auto">create</property>
 
 <!-- Names the annotated entity class -->
-<mapping class="model.Bill.java"/>
-<mapping class="model.User.java"/> 
-<mapping class="model.Product.java"/>  
+<mapping class="model.Bill"/>
+<mapping class="model.User"/> 
+<mapping class="model.Product"/>  
 
 
 </session-factory>

@@ -1,0 +1,35 @@
+@charset "ISO-8859-1";
+
+h1 {
+	color:#3360dd
+}
+
+.box {
+	width: 250px;
+	height: 170px;
+	margin-left: 10%;
+	margin-top: 10%;
+	text-align: center;
+	font-family: fantasy;
+	border: 2px,solid,red;
+	background-color: black;
+	padding-top: 50px;
+		
+}
+.box input {
+	width:150px;
+	background-color: black;
+	color: orange;
+	border: 1px solid silver;
+	border-radius: 20px;
+}
+
+.box input[type = text ],input[type = "submit"]{
+	width:150px;
+	background-color: black;
+	color: red;
+	border: 1px solid silver;
+}
+.box input[type = "submit"]:hover {
+	color: yellow;
+}
