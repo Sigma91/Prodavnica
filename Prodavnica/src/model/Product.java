@@ -7,26 +7,27 @@ import javax.persistence.Id;
 
 @Entity
 public class Product {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int IdProduct;
-	private String productName;
+	private int idProduct;
+	private String name;
 	private double price;
 	private int stock;
 	private int quantity;
-	private int discount;
+	private double discount;
 	
-public int getIdProduct() {
-		return IdProduct;
+	public int getIdProduct() {
+		return idProduct;
 	}
 	public void setIdProduct(int idProduct) {
-		IdProduct = idProduct;
+		this.idProduct = idProduct;
 	}
-	public String getProductName() {
-		return productName;
+	public String getName() {
+		return name;
 	}
-	public void setProductName(String productName) {
-		this.productName = productName;
+	public void setName(String name) {
+		this.name = name;
 	}
 	public double getPrice() {
 		return price;
@@ -46,12 +47,13 @@ public int getIdProduct() {
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
 	}
-	public int getDiscount() {
+	public double getDiscount() {
 		return discount;
 	}
-	public void setDiscount(int discount) {
+	public void setDiscount(double discount) {
 		this.discount = discount;
 	}
-
+	
+	
 
 }
